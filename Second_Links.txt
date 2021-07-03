@@ -1,4 +1,37 @@
 Secondary Links
 
+https://github.com/ArtCardenas/container-from-scratch-python
+
 https://medium.com/analytics-vidhya/simple-machine-learning-model-deployment-with-flask-in-python-part-1-723b4a4c9453
 
+
+BasicFlask.py
+-------------------------------------------------------------------------------
+# https://medium.com/analytics-vidhya/simple-machine-learning-model-deployment-with-flask-in-python-part-1-723b4a4c9453
+
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+@app.route('/',methods=['GET'])
+
+def before_submit():
+	return render_template('BasicWeb.html')
+ 
+ 
+if __name__ == '__main__':
+	app.run(port=3000, debug=True)
+-------------------------------------------------------------------------------
+
+
+BasicWeb.html
+-------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Basic Flask HTML</title>
+</head>
+<body>
+ <h1>Hello World!!</h1>
+</body>
+</html>
+-------------------------------------------------------------------------------

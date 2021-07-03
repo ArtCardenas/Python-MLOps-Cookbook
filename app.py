@@ -17,7 +17,7 @@ def home():
     html = f"<h3>Predict the Height From Weight of MLB Players</h3>"
     return html.format(format)
 
-@app.route("/predict", methods=['POST'])
+@app.route("/predict", methods=['POST','GET'])
 def predict():
     """Predicts the Height of MLB Players"""
     
