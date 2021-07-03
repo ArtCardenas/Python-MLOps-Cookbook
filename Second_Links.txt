@@ -1,0 +1,4 @@
+Secondary Links
+
+https://medium.com/analytics-vidhya/simple-machine-learning-model-deployment-with-flask-in-python-part-1-723b4a4c9453
+
