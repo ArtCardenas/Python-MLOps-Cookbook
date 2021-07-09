@@ -1,10 +1,7 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify,render_template
 from flask.logging import create_logger
 import logging
 
-from flask import Flask, request, jsonify
-from flask.logging import create_logger
-import logging
 
 import mlib
 
@@ -14,7 +11,7 @@ LOG.setLevel(logging.INFO)
 
 @app.route("/")
 def home():
-    html = f"<h3>Predict the Height From Weight of MLB Players</h3>"
+    html = f"<h3>Predict the Height From Weight of MLB Players V2</h3>"
     return html.format(format)
 
 @app.route("/predict", methods=['POST'])
@@ -33,8 +30,7 @@ def predicthtml():
     json_payload = request.json
     LOG.info(f"JSON payload: {json_payload}")
     prediction = mlib.predict(json_payload['Weight'])
-    data["Prediction"] = prediction[0]
-    return render_template("output.html",output=data)
+    return render_template("output.html",output=prediction)
 
 
 
