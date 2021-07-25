@@ -5,7 +5,7 @@ echo "Port: $PORT"
 
 #
 # there are 2 methods for CURL: POST and GET
-# POST method predict() inside app.py
+# GET method predict() inside app.py
 # 
 # https://stackoverflow.com/questions/14978411/http-post-and-get-using-curl-in-linux
 #
