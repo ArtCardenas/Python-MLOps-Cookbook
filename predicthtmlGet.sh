@@ -9,8 +9,11 @@ echo "Port: $PORT"
 # 
 # https://stackoverflow.com/questions/14978411/http-post-and-get-using-curl-in-linux
 #
+
 curl -d '{  
-   "Weight":200
+   "Weight":250
 }'\
+     -i \
+     -H "Accept: application/json" \
      -H "Content-Type: application/json" \
-     -X POST http://localhost:$PORT/predict
+     -X GET http://localhost:$PORT/predicthtml

@@ -13,4 +13,4 @@ curl -d '{
    "Weight":200
 }'\
      -H "Content-Type: application/json" \
-     -X POST http://localhost:$PORT/predict
+     -X POST http://localhost:$PORT/predicthtml
