@@ -9,27 +9,32 @@ app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
 
+
 @app.route("/")
 def home():
-    html = f"<h3>Predict the Height From Weight of MLB Players V2</h3>"
+    html = f"<h3>Predict the Height From Weight of MLB Players V3</h3>"
     return html.format(format)
+
+
 
 @app.route("/predict", methods=['POST'])
 def predict():
-    """Predicts the Height of MLB Players JSON V2"""
+    """Predicts the Height of MLB Players JSON V3"""
     
     json_payload = request.json
     LOG.info(f"JSON payload: {json_payload}")
     prediction = mlib.predict(json_payload['Weight'])
     return jsonify({'prediction': prediction})
 
+
+
 @app.route("/predicthtml", methods=['POST','GET'])
 def predicthtml():
-    """Predicts the Height of MLB Players HTML"""
+    """Predicts the Height of MLB Players HTML V3"""
 
-    json_payload = request.json
-    LOG.info(f"JSON payload: {json_payload}")
-    prediction = mlib.predict(json_payload['Weight'])
+    vWeight = request.args.get('Weight')
+    LOG.info(f"vWeight= {vWeight}")
+    prediction = mlib.predict(vWeight)
     return render_template("output.html",output=prediction)
 
 
