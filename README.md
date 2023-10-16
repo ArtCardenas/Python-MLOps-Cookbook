@@ -1,5 +1,6 @@
-[![Python application test with Github Actions](https://github.com/noahgift/Python-MLOps-Cookbook/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/noahgift/Python-MLOps-Cookbook/actions/workflows/pythonapp.yml)
-
+# Original
+# Adaptation by Arturo Cardenas, Try
+## https://wksjgpsz3c.us-east-2.awsapprunner.com/predicthtml?Weight=300
 
 # Python MLOps Cookbook 
 This is an example of a Containerized Flask Application the can be the core ingredient in many "recipes", i.e. deploy targets.
@@ -235,3 +236,4 @@ This repository is focused on MLOps.  To see more about Data Storytelling, you c
 * [Cloud Data Engineering](https://www.coursera.org/learn/cloud-data-engineering-duke?specialization=building-cloud-computing-solutions-at-scale)
 * [Cloud Machine Learning Engineering and MLOps](https://www.coursera.org/learn/cloud-machine-learning-engineering-mlops-duke?specialization=building-cloud-computing-solutions-at-scale)
 
+[![Python application test with Github Actions](https://github.com/noahgift/Python-MLOps-Cookbook/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/noahgift/Python-MLOps-Cookbook/actions/workflows/pythonapp.yml)
