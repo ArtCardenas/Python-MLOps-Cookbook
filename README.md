@@ -1,5 +1,5 @@
+# Adaptation by Arturo Cardenas 2022
 # Original by Noah Gift and Alfredo Deza
-# Adaptation by Arturo Cardenas, Try
 ## https://wksjgpsz3c.us-east-2.awsapprunner.com/predicthtml?Weight=300
 
 # Python MLOps Cookbook 
